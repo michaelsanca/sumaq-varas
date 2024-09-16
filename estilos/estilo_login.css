@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url('img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.login-contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.login-box {
+    background: rgba(111, 28, 122, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+.login-box img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.login-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.form-control {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.form-check {
+    margin-bottom: 10px;
+}
+.form-check-label {
+    color: #fff;
+    margin-right: 10px;
+}
+.btn-custom {
+    background: #966eb3;
+    color: #fff;
+    border: none;
+    width: 48%;
+    margin: 1%;
+    transition: background 0.3s;
+}
+
+.btn-secondary {
+    background: #966eb3;
+    color: #fff;
+    border: none;
+    width: 48%;
+    margin: 1%;
+}
+.btn-secondary a {
+    text-decoration: none;
+    color: #fff;
+}

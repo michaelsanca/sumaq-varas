@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Paleta de Colores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Mi Página Web</h1>
+    </header>
+
+    <main>
+        <p>Este es un ejemplo de cómo se vería la página web con la nueva paleta de colores.</p>
+        <button class="button">Haz clic aquí</button>
+    </main>
+
+    <footer class="footer">
+        <p>Derechos reservados © 2024</p>
+    </footer>
+
+    <style>
+
+:root {
+    --color-principal: #1e2326;
+    --color-secundario: #4B0082;
+    --color-acento: #D3D3D3;
+}
+
+/* Uso de la nueva paleta de colores */
+body {
+    background-color: var(--color-acento);
+    color: var(--color-principal);
+}
+
+.header {
+    background-color: var(--color-principal);
+    color: var(--color-acento);
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    color: var(--color-acento);
+}
+
+.button {
+    background-color: var(--color-principal);
+    color: var(--color-acento);
+}
+
+.button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-acento);
+}
+
+    </style>
+</body>
+</html>

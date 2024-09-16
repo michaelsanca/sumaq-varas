@@ -1,0 +1,51 @@
+
+.login-contenedor { 
+    font-family: "Indie Flower", cursive;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.login-box {
+    background: rgba(105, 105, 105, 0.667);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+.login-box img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.login-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.form-control {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.form-check {
+    margin-bottom: 10px;
+}
+.form-check-label {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    background: #966eb3;
+    color: #fff;
+    border: none;
+    width: 48%;
+    margin: 1%;
+}
+.btn-secondary a {
+    text-decoration: none;
+    color: #fff;
+}

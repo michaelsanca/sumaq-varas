@@ -1,0 +1,947 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    /* Me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODOS LOS ESTILOS DEL MENU PC Y MOVIL*/
+.contenedor-header {
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo a img {
+    height: 30px;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.contenedor-header header nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.login {
+    margin-left: 4rem;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #966eb3;
+}
+
+/* Responsive para móviles */
+.nav-responsive {
+    background-color: #966eb3;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+@media (max-width: 768px) {
+    .contenedor-header header ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        background-color: #f21a1a;
+        padding: 10px 0;
+        z-index: 100; 
+    }
+
+    .contenedor-header header nav ul.responsive {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% + 100px); 
+        position: absolute;
+        top: 50px; 
+        right: 0; 
+        background-color: #333;
+        padding: 10px;
+        z-index: 99; 
+    }
+
+    .contenedor-header header nav ul li a {
+        margin: 10px 0;
+        color: #fff; 
+        text-decoration: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* seccion de inicio */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url('img/fondo.webp');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.inicio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-family: "Indie Flower", cursive;
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #966eb3;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #773ca1; 
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+}
+
+.btn-secondary:hover {
+    background-color: #128c4f; 
+}
+
+
+
+
+
+.nombre_horizontal{
+    width: 50rem;
+}
+@media (max-width: 768px) {
+    .inicio {
+        padding: 50px 10px;
+    }
+
+    .inicio h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .inicio p {
+        font-size: 0.875rem;
+        margin-bottom: 20px;
+        
+    }
+
+    .inicio .btn {
+        padding: 8px 15px;
+    }
+    .nombre_horizontal{
+        padding-top: 8rem;
+        width: 20rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* estilos para mision y vision*/
+
+#mision-vision {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url('img/fondo.webp');
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.contenedorMV {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    
+    
+}
+
+#mision-vision h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Righteous';
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 10px;
+}
+
+.p-4 {
+    padding: 20px;
+    background-color: #333;
+}
+
+.border {
+    border: 1px solid #fff;
+}
+
+.marco {
+    border-radius: 10px;
+    background-color: transparent;
+    
+    
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    margin-right: 0.2rem;
+}
+
+.btn-info {
+    background-color: #773ca1; 
+    color: #fff;
+}
+/* los estilos para celular */
+@media (max-width: 768px) {
+    #mision-vision {
+        height: auto;
+        padding: 10px;
+    }
+
+    #mision-vision h1 {
+        font-size: 1.5rem; 
+        margin-bottom: 10px;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px 0;
+    }
+
+    .icon {
+        font-size: 1.5rem; 
+        margin-bottom: 0.5rem;
+    }
+
+    .icon i {/*  espacio entre el ícono y el texto */
+        margin-right: 0.1rem; 
+    }
+
+    p {/* tamaño del texto*/
+        font-size: 0.875rem; 
+    }
+
+    .btn { /* tamaño del boton */
+        font-size: 0.7rem; 
+        padding: 8px 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODOS LOS ESTILOS PARA LAS DANZAS PC Y MOVIL**/
+.danzas {
+    background-color: #1e2326;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.danzas .contenedor {
+    padding-top: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.danzas h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'Righteous';
+}
+
+.danzas .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.danzas .danza-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 30%; /* Ocupa aproximadamente 1/3 del contenedor en pantallas grandes */
+    max-width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.danzas .danza-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.danzas .danza-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.danzas h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.danzas p {
+    font-size: 1rem;
+}
+
+.danzas .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.danzas .btn {
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.danzas .btn-primary {
+    background-color: #966eb3;
+}
+
+.danzas .btn-primary:hover {
+    background-color: #773ca1;
+}
+
+.danzas .btn-secondary {
+    background-color: #128c4f;
+}
+
+.danzas .btn-secondary:hover {
+    background-color: #444;
+}
+
+/* ESTILOS PARA CELULARES */
+@media (max-width: 768px) {
+    .danzas {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .danzas h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .danzas .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .danzas .danza-item {
+        flex: 0 0 90%; /* Reducir el ancho de los elementos para añadir márgenes laterales */
+        max-width: 90%;
+        margin-bottom: 20px;
+        padding: 15px;
+        text-align: center;
+        transform: scale(0.95); /* Reducir el tamaño del contenido */
+    }
+
+    .danzas .danza-item img {
+        margin-bottom: 10px;
+    }
+
+    .danzas h4 {
+        font-size: 1.25rem;
+    }
+
+    .danzas p {
+        font-size: 0.875rem;
+    }
+
+    .danzas .btn-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .danzas .btn {
+        padding: 8px 15px;
+    }
+}
+
+/* ESTILOS PARA PANTALLAS MEDIANAS */
+@media (min-width: 769px) and (max-width: 991px) {
+    .danzas .row {
+        justify-content: space-around;
+    }
+
+    .danzas .danza-item {
+        flex: 0 0 45%; /* Dos elementos por fila en pantallas medianas */
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ESTILOS PARA PANTALLAS GRANDES */
+@media (min-width: 992px) {
+    .danzas .row {
+        justify-content: space-around;
+    }
+
+    .danzas .danza-item {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .danzas .icono {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .danzas h4 {
+        font-size: 1.5rem;
+    }
+
+    .danzas p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TODO DE SECCION SERVICIOS*/
+
+.servicios {
+    background-color: #1e2326;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 30px 10px;
+    min-height: 100vh;
+}
+
+.servicios .contenedor_servicios {
+    padding-top: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios h1 {
+    font-size: 2.5rem;
+    font-family: 'Righteous';
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.servicios .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.servicios .servicio-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.servicios .servicio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicios .icono {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.servicios h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.servicios p {
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .servicios {
+        flex-direction: column;
+        align-items: flex-start; /* Alinear elementos al inicio (izquierda) */
+        padding: 20px;
+        padding-left: 30px; /* Añadir margen izquierdo para mover los elementos hacia la derecha */
+    }
+
+    .servicios h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .servicios .row {
+        justify-content: center; /* Asegura que los elementos estén centrados */
+    }
+
+    .servicios .servicio-item {
+        flex: 0 0 90%; /* Permite un pequeño margen a los lados */
+        max-width: 90%;
+        padding: 10px;
+        text-align: center;
+        transform: scale(0.9); /* Reducir el tamaño del contenido */
+        margin-bottom: 20px; /* Añade espacio entre los elementos */
+    }
+
+    .servicios .icono {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .servicios h4 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .servicios p {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .servicios .row {
+        justify-content: space-around;
+    }
+
+    .servicios .servicio-item {
+        flex: 0 0 45%; 
+        max-width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .servicios .row {
+        justify-content: space-around;
+    }
+
+    .servicios .servicio-item {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .servicios .icono {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    .servicios h4 {
+        font-size: 1.5rem;
+    }
+
+    .servicios p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION  DE MENU FOTOS*/
+
+.fotos{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.fotos .contenido-seccion{
+    padding-top: 35px;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.fotos h2{
+    font-size: 30px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+}
+.fotos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.fotos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.fotos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+.fotos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(#202421, #966eb36e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 1s;
+    font-size: 15px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.fotos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.fotos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.fotos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form .btn-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #966eb3;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .btn-submit i {
+    margin-right: 10px;
+}
+
+.contact-form .btn-submit:hover {
+    background-color: #966eb3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-info {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-info .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-info .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-info .social-icons a:hover {
+    color: #966eb3;
+}
+
+.footer-info p {
+    margin: 0;
+}
+@media (max-width: 767.98px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-info .social-icons {
+        justify-content: center;
+    }
+}
